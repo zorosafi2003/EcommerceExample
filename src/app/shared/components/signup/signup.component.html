@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 offset-md-3">
+  <!-- Default form login -->
+  <form class="text-center border border-light p-5">
+      <h1>ECommerce</h1>
+    <p class="h4 mb-4">Sign Up</p>
+  
+    <!-- Email -->
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="text"class="form-control" name="Email" [(ngModel)]="data.email"  placeholder="Email">
+    </div>
+  
+   <!-- Password -->
+   <div class="form-group">
+    <label for="">Password</label>
+    <input type="password"class="form-control" name="Password" [(ngModel)]="data.password" placeholder="Password">
+  </div>
+
+   <!-- Password -->
+   <div class="form-group">
+    <label for="">Confirm Password</label>
+    <input type="password"class="form-control" name="Password" [(ngModel)]="data.confirmPassword" placeholder="Password">
+  </div>
+
+     <!-- Display Name -->
+     <div class="form-group">
+      <label for="">Display Name</label>
+      <input type="text"class="form-control" name="displayName" [(ngModel)]="data.name"  placeholder="Display Name">
+    </div>
+
+      <!-- Display Name -->
+      <div class="form-group">
+        <label for="">Phone</label>
+        <input type="text"class="form-control" name="Phone" [(ngModel)]="data.phone" placeholder="Phone">
+      </div>
+
+    <!-- Sign up button -->
+    <button class="btn btn-info btn-block my-4" type="submit" (click)="signup()">Sign up</button>
+  
+    <!-- Register -->
+    <p>You are a member?
+        <a routerLink="/login">Login</a>
+    </p>
+  
+  </form>
+  <!-- Default form login -->
+    </div>
+  </div>
+  </div>
